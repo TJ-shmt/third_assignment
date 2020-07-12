@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+/* loads font from Google  */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: #1e2124;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: auto 1040px auto;
+}
+
+h1 {
+  padding: 10px;
+  color: white;
+  text-align: left;
+}
+
+h2 {
+  padding: 10px;
+  color: white;
+  text-align: left;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 250px;
+  width: auto;
+  
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  /* ok*/
+}
+
+div.main {
+  background-color: #282b30;
+  border-radius: 10px;
+  
+}
+
+.randomSearch{
+  display: flex;
+  justify-content: center;
+}
+.favs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imgDiv {
+  background-color: #36393e;
+  padding: 0px 0px 8px 0px;
+  margin: 6px;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.like {
+  cursor: pointer;
+  background-color: #1e2124;
+  display: inline-block;
+  height: 12px;
+  margin: 12px 12px 0px 12px;
+  position: relative;
+  top: 0px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.like:before,
+.like:after {
+  content: "";
+  background-color: #1e2124;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.like:hover,
+.like:hover::before,
+.like:hover::after{
+  background-color: #f2003c;
+}
+
+.like:before {
+  top: -6px;
+  left: 0;
+}
+
+.like:after {
+  left: 6px;
+  top: 0;
+}
+
+.dislike {
+  cursor: pointer;
+  background-color: #f2003c;
+  display: inline-block;
+  height: 12px;
+  margin: 12px 12px 0px 12px;
+  position: relative;
+  top: 0px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.dislike:before,
+.dislike:after {
+  content: "";
+  background-color: #f2003c;
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.dislike:hover,
+.dislike:hover::before,
+.dislike:hover::after{
+  background-color: #1e2124;
+}
+
+.dislike:before {
+  top: -6px;
+  left: 0;
+}
+
+.dislike:after {
+  left: 6px;
+  top: 0;
+}
+
+.arrow {
+  cursor: pointer;
+  border: solid #1e2124;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+.arrow:hover{
+  border: solid gray;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
